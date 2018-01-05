@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -23,7 +25,7 @@
             boxCanvas.drawImage(img, 0, 0, box.width, box.height);
         }
         img.loc = '';
-        img.filename = 'Desert.jpg';
+        img.filename = 'outside.jpg';
         if (window.devicePixelRatio >= 2) {
             var nameParts = img.filename.split('.');
             img.src = img.loc + nameParts[0]+"-2x"+"."+nameParts[1];
@@ -87,8 +89,8 @@
     #box{
         display: block;
 	    margin: 0 auto;
-        background-image: url('Penguins.jpg');
-    	background-image: -webkit-image-set(url('Penguins.jpg') 1x, url('Desert.jpg') 2x );
+        background-image: url('inside.jpg');
+    	background-image: -webkit-image-set(url('inside.jpg') 1x, url('outside.jpg') 2x );
         background-size: cover;
 	    width: 100%;
 	    max-width: 750px;
@@ -115,10 +117,25 @@
         <div class="container justify-content-center">
             <figure id="container">
             <canvas id="box"></canvas>
-            <figcaption>Scratch the above box and see magic!!!!</figcaption>
+            <figcaption>Hi Ni-Shit ... this is from me to you with loads of love  !!!!</figcaption>
             </figure>
         </div>
     
         
+
+        
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDIAYl4YO4Kycc0SWHvjlkS0h2ckLfrhfc",
+    authDomain: "baelove-1661e.firebaseapp.com",
+    databaseURL: "https://baelove-1661e.firebaseio.com",
+    projectId: "baelove-1661e",
+    storageBucket: "",
+    messagingSenderId: "287720570554"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
