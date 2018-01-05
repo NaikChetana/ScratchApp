@@ -1,0 +1,19 @@
+{
+  "name": "scratchapp",
+  "version": "1.0.0",
+  "description": "picture scratching app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaikChetana/ScratchApp.git"
+  },
+  "author": "Chetana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaikChetana/ScratchApp/issues"
+  },
+  "homepage": "https://github.com/NaikChetana/ScratchApp#readme"
+}
